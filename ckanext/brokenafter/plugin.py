@@ -8,7 +8,7 @@ log = logging.getLogger(__name__)
 
 
 
-class BrokenafterPlugin(plugins.SingletonPlugin):
+class BrokenafterPlugin(plugins.SingletonPlugin, toolkit.DefaultDatasetForm):
     plugins.implements(plugins.IDatasetForm, inherit=True)
     plugins.implements(plugins.IValidators)
 

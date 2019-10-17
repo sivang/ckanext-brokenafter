@@ -25,7 +25,7 @@ class BrokenafterPlugin(plugins.SingletonPlugin, toolkit.DefaultDatasetForm):
         
 
     def update_package_schema(self):
-        schema = super(BrokenafterPluginPlugin, self).create_package_schema()
+        schema = super(BrokenafterPlugin, self).create_package_schema()
         schema = self._modify_package_schema(schema)
         return schema
        

@@ -19,13 +19,13 @@ class BrokenafterPlugin(plugins.SingletonPlugin, toolkit.DefaultDatasetForm):
         return schema
 
     def create_package_schema(self):
-        schema = super(RochePlugin, self).create_package_schema()
+        schema = super(BrokenafterPlugin, self).create_package_schema()
         schema = self._modify_package_schema(schema)
         return schema
         
 
     def update_package_schema(self):
-        schema = super(RochePlugin, self).create_package_schema()
+        schema = super(BrokenafterPluginPlugin, self).create_package_schema()
         schema = self._modify_package_schema(schema)
         return schema
        
